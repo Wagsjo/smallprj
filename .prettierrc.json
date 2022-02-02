@@ -1,6 +1,6 @@
 {
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.singleQuote": false,
     "prettier.trailingComma": "none",
     "prettier.vueIndentScriptAndStyle": true
 }

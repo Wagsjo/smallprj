@@ -1,17 +1,21 @@
 {
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/base",
-      "plugin:vue/vue3-essential",
-      "plugin:vue/vue3-strongly-recommended"
-    ],
-    "root": true,
-    "rules": {
-      "vue/max-attributes-per-line": "off",
-      "vue/singleline-html-element-content-newline": "off"
-    },
-    "html": {"normal": "never", "void": "always"}
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/base",
+    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-strongly-recommended"
+  ],
+  "root": true,
+  "rules": {
+    "vue/max-attributes-per-line": "off",
+    "vue/singleline-html-element-content-newline": "off",
+  "vue/html-self-closing": [0, {
+    "html": {
+      "void": "never"
+    }
+  }]
   }
+}

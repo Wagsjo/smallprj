@@ -2,19 +2,19 @@
 
 import { createRouter, createWebHashHistory } from "vue-router";
 
-import AboutView from "./views/AboutView.vue";
-import Weather from "./views/Weather.vue";
+import Forecast from "./views/JokeView.vue";
+import Weather from "./views/WeatherView.vue";
 
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-      component: AboutView,
-      path: "/about",
+      component: Forecast,
+      path: "/",
     },
     {
       component: Weather,
-      path: "/weather",
+      path: "/weather/:weekday",
     },
   ],
 });
