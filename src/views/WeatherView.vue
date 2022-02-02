@@ -19,14 +19,14 @@ export default {
     pickCity() {
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=3453f0c07be23ccba37ed293a1bf6c2b`
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=3453f0c07be23ccba37ed293a1bf6c2b`
         )
         .then((response) => {
           console.log(response.data);
           this.cardTitle = response.data.name;
           this.cardCountry = response.data.sys.country;
           this.cardPicVar = response.data.weather[0].icon;
-          this.cardPic = `http://openweathermap.org/img/wn/${this.cardPicVar}@4x.png`;
+          this.cardPic = `https://openweathermap.org/img/wn/${this.cardPicVar}@4x.png`;
           this.cardMain = response.data.weather[0].main;
           this.cardTemp = Math.floor(response.data.main.temp);
           this.cardTempFeels = Math.floor(response.data.main.feels_like);
